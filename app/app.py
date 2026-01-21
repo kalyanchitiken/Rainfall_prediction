@@ -80,12 +80,11 @@ div[data-baseweb="input"] > div {
 """, unsafe_allow_html=True)
 
 # load model
-with open("../feature_columns.pkl", "rb") as file:
-    feature_cols = pickle.load(file)
-
-with open("../rainfall_model.pkl", "rb") as file:
+with open("rainfall_model.pkl", "rb") as file:
     model = pickle.load(file)
 
+with open("feature_columns.pkl", "rb") as file:
+    feature_cols = pickle.load(file)
 
 # Header
 st.markdown('<div class="main-title">🌧️ Rainfall Prediction Dashboard</div>', unsafe_allow_html=True)
