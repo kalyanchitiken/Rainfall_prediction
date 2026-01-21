@@ -1,0 +1,17 @@
+# Ignore virtual environments
+doc/
+venv/
+.env/
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore model files (optional)
+*.pkl
+
+# Ignore Streamlit cache
+.streamlit/
+
+# Ignore OS files
+.DS_Store
